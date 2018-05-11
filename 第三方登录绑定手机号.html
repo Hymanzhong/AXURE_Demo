@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>第三方登录绑定手机号</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=375, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link href="data/apple-touch-icon.png" rel="apple-touch-icon"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/第三方登录绑定手机号/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/第三方登录绑定手机号/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- 吐司提示 (动态面板) -->
+      <div id="u512" class="ax_default ax_default_hidden" data-label="吐司提示" style="display:none; visibility: hidden">
+        <div id="u512_state0" class="panel_state" data-label="短信验证码已发送" style="">
+          <div id="u512_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u513" class="ax_default _默认样式">
+              <img id="u513_img" class="img " src="images/第三方登录绑定手机号/u513.png"/>
+              <!-- Unnamed () -->
+              <div id="u514" class="text">
+                <p><span>短信验证码已发送</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state1" class="panel_state" data-label="手机号码已被注册" style="visibility: hidden;">
+          <div id="u512_state1_content" class="panel_state_content">
+
+            <!-- Unnamed (组合) -->
+            <div id="u515" class="ax_default" data-left="7" data-top="10" data-width="300" data-height="140">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u516" class="ax_default _默认样式1">
+                <div id="u516_div" class=""></div>
+                <!-- Unnamed () -->
+                <div id="u517" class="text" style="display:none; visibility: hidden">
+                  <p><span></span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u518" class="ax_default _默认样式1 selected" selectiongroup="tab-basic-bnt">
+                <div id="u518_div" class="selected"></div>
+                <!-- Unnamed () -->
+                <div id="u519" class="text">
+                  <p><span>取消</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u520" class="ax_default _默认样式1 selected" selectiongroup="tab-basic-bnt">
+                <div id="u520_div" class="selected"></div>
+                <!-- Unnamed () -->
+                <div id="u521" class="text">
+                  <p><span>该手机号已注册，继续操作将绑定至当前帐号</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u522" class="ax_default _默认样式1 selected" selectiongroup="tab-basic-bnt">
+                <div id="u522_div" class="selected"></div>
+                <!-- Unnamed () -->
+                <div id="u523" class="text">
+                  <p><span>继续绑定</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state2" class="panel_state" data-label="手机号码格式不正确" style="visibility: hidden;">
+          <div id="u512_state2_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u524" class="ax_default _默认样式">
+              <img id="u524_img" class="img " src="images/第三方登录绑定手机号/u513.png"/>
+              <!-- Unnamed () -->
+              <div id="u525" class="text">
+                <p><span>手机号码格式不正确</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state3" class="panel_state" data-label="请先填写手机号码" style="visibility: hidden;">
+          <div id="u512_state3_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u526" class="ax_default _默认样式">
+              <img id="u526_img" class="img " src="images/第三方登录绑定手机号/u513.png"/>
+              <!-- Unnamed () -->
+              <div id="u527" class="text">
+                <p><span>请先填写手机号码</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state4" class="panel_state" data-label="短信验证码不正确" style="visibility: hidden;">
+          <div id="u512_state4_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u528" class="ax_default _默认样式">
+              <img id="u528_img" class="img " src="images/第三方登录绑定手机号/u513.png"/>
+              <!-- Unnamed () -->
+              <div id="u529" class="text">
+                <p><span>短信验证码不正确</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state5" class="panel_state" data-label="绑定成功" style="visibility: hidden;">
+          <div id="u512_state5_content" class="panel_state_content">
+
+            <!-- Unnamed (组合) -->
+            <div id="u530" class="ax_default" data-left="0" data-top="0" data-width="140" data-height="100">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u531" class="ax_default _默认样式">
+                <img id="u531_img" class="img " src="images/登录页/u347.png"/>
+                <!-- Unnamed () -->
+                <div id="u532" class="text" style="display:none; visibility: hidden">
+                  <p><span></span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u533" class="ax_default _默认样式">
+                <div id="u533_div" class=""></div>
+                <!-- Unnamed () -->
+                <div id="u534" class="text">
+                  <p><span>绑定成功</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (SVG) -->
+              <div id="u535" class="ax_default _图片1">
+                <img id="u535_img" class="img " src="images/登录页/u351.svg"/>
+                <!-- Unnamed () -->
+                <div id="u536" class="text" style="display:none; visibility: hidden">
+                  <p><span></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state6" class="panel_state" data-label="手机号码未填写" style="visibility: hidden;">
+          <div id="u512_state6_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u537" class="ax_default _默认样式">
+              <img id="u537_img" class="img " src="images/登录页/u340.png"/>
+              <!-- Unnamed () -->
+              <div id="u538" class="text">
+                <p><span>请输入登录手机号码</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state7" class="panel_state" data-label="验证码已使用" style="visibility: hidden;">
+          <div id="u512_state7_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u539" class="ax_default _默认样式1">
+              <img id="u539_img" class="img " src="images/第三方登录绑定手机号/u539.png"/>
+              <!-- Unnamed () -->
+              <div id="u540" class="text">
+                <p><span>验证码已使用，请重新获取验证码</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u512_state8" class="panel_state" data-label="验证码已失效" style="visibility: hidden;">
+          <div id="u512_state8_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u541" class="ax_default _默认样式1">
+              <img id="u541_img" class="img " src="images/第三方登录绑定手机号/u539.png"/>
+              <!-- Unnamed () -->
+              <div id="u542" class="text">
+                <p><span>验证码已失效，请重新获取验证码</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u543" class="ax_default _默认样式">
+        <div id="u543_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u544" class="text">
+          <p><span>绑定</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u545" class="ax_default" data-left="48" data-top="129" data-width="280" data-height="50">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u546" class="ax_default _默认样式">
+          <div id="u546_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u547" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u548" class="ax_default _默认样式">
+          <input id="u548_input" type="text" value=""/>
+        </div>
+      </div>
+
+      <!-- Unnamed (SVG) -->
+      <div id="u549" class="ax_default _图片1">
+        <img id="u549_img" class="img " src="images/第三方登录绑定手机号/u549.svg"/>
+        <!-- Unnamed () -->
+        <div id="u550" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u551" class="ax_default" data-left="48" data-top="178" data-width="280" data-height="50">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u552" class="ax_default _默认样式">
+          <div id="u552_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u553" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u554" class="ax_default" data-left="99" data-top="130" data-width="229" data-height="48">
+
+        <!-- 手机号码 (文本框) -->
+        <div id="u555" class="ax_default _默认样式" data-label="手机号码">
+          <input id="u555_input" type="text" value="" maxlength="11"/>
+        </div>
+
+        <!-- 清除 (SVG) -->
+        <div id="u556" class="ax_default _图片1 ax_default_hidden" data-label="清除" style="display:none; visibility: hidden">
+          <img id="u556_img" class="img " src="images/登录页/清除_u417.svg"/>
+          <!-- Unnamed () -->
+          <div id="u557" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u558" class="ax_default" data-left="99" data-top="179" data-width="229" data-height="48">
+
+        <!-- 验证码 (文本框) -->
+        <div id="u559" class="ax_default _默认样式" data-label="验证码">
+          <input id="u559_input" type="text" value="" maxlength="6"/>
+        </div>
+
+        <!-- 清除 (SVG) -->
+        <div id="u560" class="ax_default _图片1 ax_default_hidden" data-label="清除" style="display:none; visibility: hidden">
+          <img id="u560_img" class="img " src="images/登录页/清除_u417.svg"/>
+          <!-- Unnamed () -->
+          <div id="u561" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 发送验证码 (矩形) -->
+      <div id="u562" class="ax_default _默认样式" data-label="发送验证码">
+        <div id="u562_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u563" class="text">
+          <p><span>发送验证码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u564" class="ax_default" data-left="62" data-top="144" data-width="14" data-height="20">
+
+        <!-- Unnamed (形状) -->
+        <div id="u565" class="ax_default icon">
+          <img id="u565_img" class="img " src="images/登录页/u426.png"/>
+          <!-- Unnamed () -->
+          <div id="u566" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u567" class="ax_default icon">
+          <img id="u567_img" class="img " src="images/登录页/u428.png"/>
+          <!-- Unnamed () -->
+          <div id="u568" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u569" class="ax_default icon">
+          <img id="u569_img" class="img " src="images/登录页/u430.png"/>
+          <!-- Unnamed () -->
+          <div id="u570" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u571" class="ax_default icon">
+          <img id="u571_img" class="img " src="images/登录页/u432.png"/>
+          <!-- Unnamed () -->
+          <div id="u572" class="text" style="display:none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u573" class="ax_default icon">
+        <img id="u573_img" class="img " src="images/登录页/u434.png"/>
+        <!-- Unnamed () -->
+        <div id="u574" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u575" class="ax_default label1">
+        <div id="u575_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u576" class="text">
+          <p><span>绑定手机号码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u577" class="ax_default label1">
+        <div id="u577_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u578" class="text">
+          <p><span>为了提升您的账号安全，建议您绑定手机号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u579" class="ax_default label1">
+        <div id="u579_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u580" class="text">
+          <p><span>温馨提醒：绑定手机后，您可以使用手机验证码进行登录</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
